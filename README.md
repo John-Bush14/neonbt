@@ -16,7 +16,9 @@ Then you can install it with your favorite neovim plugin manager like
 #### lazy
 ``` lua
 {
-    "John-Bush14/neonbt", ft = {"nbt", "dat", "dat_old"}
+    "John-Bush14/neonbt",
+
+    event = { "BufReadPre *.nbt", "BufReadPre *.dat", "BufReadPre *.dat_old" }
 }
 ```
 
